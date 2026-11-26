@@ -1,0 +1,16 @@
+{
+  "users": [],
+  "items": [
+    {"id":"m1","type":"Movie","name":"Pushpa 2","category":"Telugu","price":180,"description":"Action drama · Standard seating","image":"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=900","active":true},
+    {"id":"m2","type":"Movie","name":"Kalki 2898 AD","category":"Telugu","price":200,"description":"Science-fiction adventure","image":"https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=900","active":true},
+    {"id":"m3","type":"Movie","name":"Interstellar","category":"English","price":220,"description":"Science-fiction film","image":"https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=900","active":true},
+    {"id":"f1","type":"Food","name":"Veg Hakka Noodles","category":"Indo-Chinese","price":180,"description":"Wok-tossed noodles with vegetables","image":"https://images.unsplash.com/photo-1585032226651-759b368d7246?w=900","active":true},
+    {"id":"f2","type":"Food","name":"Chicken Biryani","category":"Desi","price":240,"description":"Aromatic rice with spices and chicken","image":"https://images.unsplash.com/photo-1563379091339-03246963d51a?w=900","active":true},
+    {"id":"t1","type":"Transport","name":"Car","category":"Ride","price":250,"description":"Comfortable city and outstation rides","image":"https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=900","active":true},
+    {"id":"t2","type":"Transport","name":"Bike","category":"Ride","price":80,"description":"Quick and convenient short trips","image":"https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=900","active":true},
+    {"id":"t3","type":"Transport","name":"Bus","category":"Ride","price":150,"description":"Affordable city and intercity travel","image":"https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=900","active":true},
+    {"id":"e1","type":"Event","name":"Live Music Night","category":"Vijayawada · 20 Dec 2026","price":599,"description":"An evening of live music and entertainment","image":"https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=900","active":true},
+    {"id":"e2","type":"Event","name":"College Fest","category":"Guntur · 15 Dec 2026","price":299,"description":"Music, dance, food and activities","image":"https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900","active":true}
+  ],
+  "bookings": []
+}
