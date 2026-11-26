@@ -2,7 +2,7 @@ import React,{useEffect,useMemo,useState} from 'react';
 import{createRoot}from'react-dom/client';
 import{Ticket,ShieldCheck,UserRound,LayoutDashboard,Film,Utensils,Car,CalendarDays,Users,IndianRupee,LogOut,Plus,Search,Pencil,Trash2,RefreshCw,Package,Menu,X,ArrowRight,CheckCircle2}from'lucide-react';
 import'./styles.css';
-const API='http://localhost:5000/api';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 const money=n=>'₹'+Number(n||0).toLocaleString('en-IN');
 async function request(path,{token,...opts}={}){const r=await fetch(API+path,{...opts,headers:{'Content-Type':'application/json',...(token?{Authorization:`Bearer ${token}`} :{}),...(opts.headers||{})}});const data=await r.json().catch(()=>({}));if(!r.ok)throw Error(data.message||'Something went wrong');return data}
 function App(){

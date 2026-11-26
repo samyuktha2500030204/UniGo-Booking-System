@@ -10,9 +10,11 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DB = path.join(__dirname, 'db.json');
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const SECRET = process.env.JWT_SECRET || 'change-this-demo-secret-before-deployment';
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({
+  origin: process.env.CLIENT_URL || 'http://localhost:5173'
+}));
 app.use(express.json());
 function readDB(){ return JSON.parse(fs.readFileSync(DB,'utf8')); }
 function writeDB(data){ fs.writeFileSync(DB, JSON.stringify(data,null,2)); }
